@@ -2,10 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// Static SPA build. Production assets are served from the GitHub Pages
-// repository subpath; the dev server keeps serving from the root.
+// Static SPA build. Relative asset paths so the same build works both at the
+// root (Lovable hosting) and under the GitHub Pages repository subpath.
 export default defineConfig(({ command }) => ({
-  base: command === "build" ? "/elshammahmpofu04-lgtm-enhance--my-launch/" : "/",
+  base: command === "build" ? "./" : "/",
+
   plugins: [react(), tailwindcss()],
   resolve: {
     tsconfigPaths: true,
