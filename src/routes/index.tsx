@@ -19,11 +19,11 @@ export const Route = createFileRoute("/")({
         content:
           "Complete 5-8 qualifying tasks to become eligible for a $750 Home Depot gift card reward, subject to the promotion's terms.",
       },
-      { property: "og:title", content: "Claim a $750 Home Depot Gift Card" },
+      { property: "og:title", content: "Claim a $750 Home Depot Gift Card | Rewards Landing" },
       {
         property: "og:description",
         content:
-          "Complete 5-8 qualifying tasks to become eligible for the reward, subject to the promotion's terms.",
+          "Complete 5-8 qualifying tasks to become eligible for a $750 Home Depot gift card reward, subject to the promotion's terms.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
