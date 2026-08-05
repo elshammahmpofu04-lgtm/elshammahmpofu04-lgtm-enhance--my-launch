@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
   Zap,
@@ -9,28 +8,6 @@ import {
   ArrowRight,
   ChevronDown,
 } from "lucide-react";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Claim a $750 Home Depot Gift Card | Rewards Landing" },
-      {
-        name: "description",
-        content:
-          "Complete 5-8 qualifying tasks to become eligible for a $750 Home Depot gift card reward, subject to the promotion's terms.",
-      },
-      { property: "og:title", content: "Claim a $750 Home Depot Gift Card | Rewards Landing" },
-      {
-        property: "og:description",
-        content:
-          "Complete 5-8 qualifying tasks to become eligible for a $750 Home Depot gift card reward, subject to the promotion's terms.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: Index,
-});
 
 const benefits = [
   { icon: Zap, title: "Quick Process", text: "Simple step-by-step experience." },
@@ -78,7 +55,7 @@ function useCountdown(durationMs: number) {
   return [h, m, s].map((x) => String(x).padStart(2, "0"));
 }
 
-function Index() {
+export default function Landing() {
   const [h, m, s] = useCountdown(7200000);
   const [viewers, setViewers] = useState(27);
 
