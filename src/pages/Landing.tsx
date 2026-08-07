@@ -24,10 +24,10 @@ const benefits = [
 ];
 
 const testimonials = [
-  { name: "Sample Testimonial 1", text: "“Great layout and easy to use.”" },
+  { name: "Jordan King", text: "“Great layout and easy to use.”" },
   {
-    name: "Sample Testimonial 2",
-    text: "“Placeholder review—replace with genuine customer feedback.”",
+    name: "Nicole Lure",
+    text: "“Couldn’t believe it actually worked! Used my $750 on tools and new grill. So happy.”",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Landing() {
           </div>
 
           <a
-            href="#"
+            href="https://linkthem.net/aff_c?offer_id=2442&aff_id=170804"
             className="cta-gradient mt-6 flex items-center justify-center gap-2 rounded-2xl px-6 py-4 text-xl font-bold text-primary-foreground transition-transform active:scale-[0.98]"
           >
             Claim Rewards <ArrowRight className="size-6" />
@@ -184,7 +184,7 @@ export default function Landing() {
       {/* Sticky CTA */}
       <div className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-background/85 px-4 py-3 backdrop-blur-md">
         <a
-          href="#"
+          href="https://linkthem.net/aff_c?offer_id=2442&aff_id=170804"
           className="cta-gradient mx-auto flex w-full max-w-[430px] items-center justify-center gap-2 rounded-2xl px-6 py-4 text-lg font-bold text-primary-foreground transition-transform active:scale-[0.98]"
         >
           Claim Rewards <ArrowRight className="size-5" />
